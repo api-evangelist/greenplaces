@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trust.greenplaces.com
+url: https://trust.greenplaces.com
+platform: vanta
+certifications: []
+notes: >-
+  Live trust center (HTTP 200) hosted on Vanta with the heading "Greenplaces
+  Trust Center". Named certifications are rendered client-side and were not
+  machine-verifiable from the static HTML, so none are asserted here to avoid
+  fabrication. Refresh with a rendered fetch to enumerate SOC 2 / ISO / etc.
+evidence:
+- source: https://trust.greenplaces.com
+  keywords: [greenplaces trust center, vanta]

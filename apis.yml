@@ -1,8 +1,28 @@
 aid: greenplaces
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/greenplaces.png
 name: Greenplaces
-description: Greenplaces is a company surfaced as a portfolio company of felicis, redpoint-ventures and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Greenplaces is a sustainability and ESG reporting platform that pairs software
+  with expert consulting to help companies — especially suppliers responding to
+  enterprise requirements — measure their carbon footprint under the GHG Protocol
+  and complete sustainability framework submissions including CDP, EcoVadis, SBTi,
+  GRI, SASB/ISSB and GRESB. The managed-service platform also supports B Corp
+  certification, CSRD readiness, SOC 2 and AI-governance compliance, and tracking
+  of regulations such as California SB 253 and SB 261. Greenplaces is venture-backed
+  by Felicis and Redpoint Ventures. Added to the API Evangelist network from VC
+  portfolio data; the company publishes a managed product (app.greenplaces.com) but
+  no public developer API, SDK, or documentation surface at the time of enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/greenplaces/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Sustainability
+- ESG
+- Carbon Accounting
+- Carbon Footprint
+- GHG Protocol
+- Compliance
+- Reporting
+- Regulatory
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +51,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/greenplaces-domain-security.yml
+- type: TrustCenter
+  url: security/greenplaces-trust-center.yml
 - type: Website
   url: https://greenplaces.com
+- type: Login
+  url: https://app.greenplaces.com/login
+- type: Blog
+  url: https://www.greenplaces.com/blog/
+- type: TermsOfService
+  url: https://www.greenplaces.com/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.greenplaces.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
